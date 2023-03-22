@@ -1,0 +1,25 @@
+
+//LINK COLOR N HOVER
+@mixin link-style {
+    color: #59331d;
+    text-decoration: none;
+  
+    &:hover {
+      text-decoration: none;
+      color: #d98555;
+    }
+  }
+  
+  a {
+    @include link-style;
+  }
+  
+  //IMAGES
+  @mixin flexible-image {
+    max-width: 100%;
+    border-radius: 10px;
+  }
+  
+  img {
+    @include flexible-image;
+  }
